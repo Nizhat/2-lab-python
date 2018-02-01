@@ -1,11 +1,5 @@
-a = input("Enter a: ")
-b = input("Enter b: ")
- 
-s = ''
- 
-while a<=b:
-    if a%2==0: 
-		s = s + str(a)+" "
-    a += 1
- 
-print(x)
+a, b = [int(input()) for i in range(2)]
+
+even = a + a % 2
+for i in range(even, b + 1, 2):
+    print(i, end=' ')
