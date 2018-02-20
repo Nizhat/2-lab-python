@@ -14,7 +14,10 @@ print(a)
 print("\n*****************************************\n")
 
 print("Задание 3.\n")
-a = np.random.random((3,3))
+a = np.arange(15)
+print(a)
+print("\n")
+a[(3 < a) & (a <= 10)] *= -1
 print(a)
 print("\n*****************************************\n")
 
@@ -39,7 +42,7 @@ print("\n*****************************************\n")
 
 
 print("Задание 6.\n")
-b = np.random.random((4, 4))
+b = np.random.randint(1,10,(4, 4))
 c = b - b.mean(axis=1, keepdims=True)
 print(b)
 print(c)
@@ -47,17 +50,16 @@ print("\n*****************************************\n")
 
 
 print("Задание 7.\n")
-n = np.random.random((5,5,3))
-m = np.ones((5,5))
-g = np.dot(n,m)
-print(g)
+b = np.random.randint(1,10,(5,5))
+print(b)
 print("\n*****************************************\n")
 
 
 print("Задание 8.\n")
-h = np.random.uniform(0,10,(3,3))
-rank = np.linalg.matrix_rank(h)
+h = np.random.randint(0,10,(3,3))
 print(h)
+rank = np.linalg.matrix_rank(h)
+print(rank)
 print("\n*****************************************\n")
 
 
@@ -69,7 +71,7 @@ print("\n*****************************************\n")
 
 
 print("Задание 10.\n")
-Z = np.random.random(10)
+Z = np.random.randint(0,10,(10))
 print(Z)
 Z[Z.argmax()] = 0
 print(Z)
