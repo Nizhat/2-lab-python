@@ -4,9 +4,9 @@ import random as rand
 arr = []
 explode = (0.1, 0.1)
 
-for i in range(1, 1001):
+for i in range(1, 1000100):
     a = rand.randint(1, 100)
-    if(a >= 30):
+    if(a >= 50):
         arr.append(0)#Орел
     else:
         arr.append(1)#Решка
